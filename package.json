@@ -1,0 +1,17 @@
+{
+  "name": "yunyi-boke",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/2386793228/yunyi-boke.git",
+  "author": "Kangjun <2386793228@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.1.0"
+  }
+}
