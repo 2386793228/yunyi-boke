@@ -8,6 +8,7 @@ export default defineConfig({
   // srcDir: 'src', // 当配置了srcDir的时候，themeConfig.logo就没生效了
   head: [['link', { rel: 'icon', href: '/avator.jpg' }]],
   cacheDir: './.vitepress/.vite', // 开发环境缓存
+  cleanUrls: true, // 删除url中的.html后缀
   themeConfig: {
     logo: '/avator.jpg',
     siteTitle: '云深不知处',
@@ -21,9 +22,15 @@ export default defineConfig({
               text: 'my',
               link: '/my/',
             },
+          ],
+          collapsed: true,
+        },
+        {
+          text: '学习笔记',
+          items: [
             {
-              text: 'Github',
-              link: 'https://github.com/2386793228',
+              text: 'one',
+              link: '/my/one',
             },
           ],
           collapsed: true,
@@ -43,6 +50,7 @@ export default defineConfig({
         timeStyle: 'medium',
       },
     },
+    outline: [2, 5],
   },
   rewrites: {
     'packages/:pkg.md': ':pkg/index.md',

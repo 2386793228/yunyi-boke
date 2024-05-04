@@ -7,8 +7,8 @@ hero:
   tagline: welcome to home
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
+      text: 我的
+      link: /my/
     - theme: alt
       text: View on GitHub
       link: https://github.com/vuejs/vitepress
@@ -28,14 +28,3 @@ features:
     title: Another cool feature
     details: Lorem ipsum...
 ---
-
-[动态路由 1](/foo/)
-
-[动态路由 2](/bar/)
-
-## title <Badge type="tip" text="1.0.0" />
-
-<script setup>
-  import demo from './components/demo.vue'
-</script>
-<demo />
